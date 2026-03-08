@@ -11,15 +11,15 @@ export default function Home() {
 
         <div className="flex gap-6 text-gray-400">
 
-          <a href="#projects" className="hover:text-white transition">
+          <a href="#projects" className="hover:text-white transition duration-300">
             Projects
           </a>
 
-          <a href="#stack" className="hover:text-white transition">
+          <a href="#stack" className="hover:text-white transition duration-300">
             Tech
           </a>
 
-          <a href="#about" className="hover:text-white transition">
+          <a href="#about" className="hover:text-white transition duration-300">
             About
           </a>
 
@@ -35,8 +35,12 @@ export default function Home() {
           Muhammet Anıl Ceylan
         </h1>
 
-        <p className="text-2xl text-gray-400 mb-10">
+        <p className="text-2xl text-gray-400 mb-6">
           AI Product Builder • Data-Driven Strategy • MIS Student
+        </p>
+
+        <p className="text-gray-500 max-w-xl mx-auto mb-10">
+          Building AI tools that transform data and user feedback into actionable product insights.
         </p>
 
         <div className="flex justify-center gap-4">
@@ -80,11 +84,18 @@ export default function Home() {
             rel="noopener noreferrer"
             className="border border-gray-800 p-8 rounded-xl hover:scale-105 hover:border-white hover:shadow-xl transition duration-300 block"
           >
-            <h3 className="text-xl font-semibold mb-3">HireFit</h3>
+            <h3 className="text-xl font-semibold mb-3">
+              HireFit
+            </h3>
 
             <p className="text-gray-400">
               AI resume optimization tool that analyzes CVs and suggests improvements.
             </p>
+
+            <p className="text-sm text-blue-400 mt-4">
+              View Code →
+            </p>
+
           </a>
 
 
@@ -94,11 +105,18 @@ export default function Home() {
             rel="noopener noreferrer"
             className="border border-gray-800 p-8 rounded-xl hover:scale-105 hover:border-white hover:shadow-xl transition duration-300 block"
           >
-            <h3 className="text-xl font-semibold mb-3">ProductLens</h3>
+            <h3 className="text-xl font-semibold mb-3">
+              ProductLens
+            </h3>
 
             <p className="text-gray-400">
               AI tool that analyzes product reviews and extracts product insights.
             </p>
+
+            <p className="text-sm text-blue-400 mt-4">
+              View Code →
+            </p>
+
           </a>
 
 
@@ -108,11 +126,18 @@ export default function Home() {
             rel="noopener noreferrer"
             className="border border-gray-800 p-8 rounded-xl hover:scale-105 hover:border-white hover:shadow-xl transition duration-300 block"
           >
-            <h3 className="text-xl font-semibold mb-3">Market Radar</h3>
+            <h3 className="text-xl font-semibold mb-3">
+              Market Radar
+            </h3>
 
             <p className="text-gray-400">
               AI system that scans markets and identifies new product opportunities.
             </p>
+
+            <p className="text-sm text-blue-400 mt-4">
+              View Code →
+            </p>
+
           </a>
 
         </div>
@@ -196,8 +221,8 @@ export default function Home() {
 
 
       {/* FOOTER */}
-      <footer className="text-center text-gray-600 text-sm">
-        © 2026 Muhammet Anıl Ceylan
+      <footer className="text-center text-gray-600 text-sm mt-20">
+        © 2026 Muhammet Anıl Ceylan • Built with Next.js
       </footer>
 
     </main>
