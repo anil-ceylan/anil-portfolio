@@ -241,7 +241,7 @@ export default function Home() {
 
       {/* FOOTER */}
 
-      <footer className="text-center text-gray-400 text-sm pb-8">
+     <footer className="text-center text-gray-400 text-sm py-10 mt-20 border-t border-white/10">
 
   <div className="flex justify-center gap-6 mb-3">
 
