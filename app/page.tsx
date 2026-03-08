@@ -227,8 +227,8 @@ export default function Home() {
         </p>
 
         <a
-          href="mailto:youremail@gmail.com"
-          className="px-6 py-3 border border-white/20 rounded-lg hover:bg-white hover:text-black transition shadow-lg"
+          href="mailto:muhammetanilceylann@gmail.com"
+          className="px-6 py-3 border border-white/20 rounded-lg hover:bg-white hover:text-black transition shadow-lg hover:shadow-white/20"
         >
           Email Me
         </a>
