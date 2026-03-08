@@ -227,7 +227,7 @@ export default function Home() {
         </p>
 
         <a
-          href="mailto:muhammetanilceylann@gmail.com"
+          href="mailto:muhammetanilceylann@gmail.com?subject=Portfolio Contact&body=Hi Anil, I saw your portfolio and wanted to connect."
           className="px-6 py-3 border border-white/20 rounded-lg hover:bg-white hover:text-black transition shadow-lg hover:shadow-white/20"
         >
           Email Me
