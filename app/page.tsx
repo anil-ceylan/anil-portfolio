@@ -1,13 +1,21 @@
 export default function Home() {
   return (
-    <main className="bg-black text-white min-h-screen font-sans">
+    <main className="relative min-h-screen text-white font-sans overflow-hidden">
+
+      {/* BACKGROUND LIGHTS */}
+
+      <div className="absolute w-96 h-96 bg-blue-500/20 blur-[120px] rounded-full top-40 left-20"></div>
+      <div className="absolute w-96 h-96 bg-purple-500/20 blur-[120px] rounded-full bottom-20 right-20"></div>
+
+
 
       {/* NAVBAR */}
 
-      <nav className="fixed w-full top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur">
+      <nav className="fixed w-full top-0 z-50 border-b border-white/10 backdrop-blur">
+
         <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
 
-          <h1 className="font-semibold text-lg">
+          <h1 className="font-semibold text-lg tracking-wide hover:text-gray-300 transition">
             Anıl Ceylan
           </h1>
 
@@ -28,6 +36,7 @@ export default function Home() {
           </div>
 
         </div>
+
       </nav>
 
 
@@ -36,35 +45,34 @@ export default function Home() {
 
       <section className="h-screen flex flex-col justify-center items-center text-center px-6">
 
-        <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-white to-gray-400 text-transparent bg-clip-text">
+        <h1 className="text-6xl font-bold mb-6 tracking-tight bg-gradient-to-r from-white via-blue-200 to-purple-300 text-transparent bg-clip-text">
           Muhammet Anıl Ceylan
         </h1>
 
-        <p className="text-xl text-gray-400 mb-6">
+        <p className="text-xl text-gray-300 mb-6">
           AI Product Builder • Data-Driven Strategy • MIS Student
         </p>
 
-        <p className="text-gray-500 max-w-xl mb-10">
-          Building AI tools that transform data and user feedback into
-          actionable product insights.
+        <p className="text-gray-400 max-w-xl mb-10">
+          Building AI tools that transform data and user feedback into actionable product insights.
         </p>
 
 
         <div className="flex gap-4">
 
           <a
-            href="https://linkedin.com/in/muhammetanilceylan"
+            href="https://linkedin.com"
             target="_blank"
-            className="px-6 py-2 border border-white/20 rounded-lg hover:bg-white hover:text-black transition"
+            className="px-6 py-3 rounded-xl bg-white/10 backdrop-blur border border-white/20 hover:bg-white hover:text-black transition-all duration-300 shadow-xl"
           >
             LinkedIn
           </a>
 
 
           <a
-            href="https://github.com/anil-ceylan"
+            href="https://github.com"
             target="_blank"
-            className="px-6 py-2 border border-white/20 rounded-lg hover:bg-white hover:text-black transition"
+            className="px-6 py-3 rounded-xl bg-white/10 backdrop-blur border border-white/20 hover:bg-white hover:text-black transition-all duration-300 shadow-xl"
           >
             GitHub
           </a>
@@ -86,7 +94,7 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-8">
 
 
-          <div className="border border-white/10 p-6 rounded-xl hover:border-white/30 hover:scale-[1.03] hover:shadow-xl transition">
+          <div className="border border-white/10 p-6 rounded-xl bg-white/5 backdrop-blur hover:scale-105 hover:border-white/30 transition-all duration-300 shadow-xl">
 
             <h3 className="text-xl font-semibold mb-3">
               HireFit
@@ -97,7 +105,7 @@ export default function Home() {
             </p>
 
             <a
-              href="https://github.com/anil-ceylan"
+              href="https://github.com"
               target="_blank"
               className="text-blue-400 hover:text-blue-300"
             >
@@ -108,7 +116,7 @@ export default function Home() {
 
 
 
-          <div className="border border-white/10 p-6 rounded-xl hover:border-white/30 hover:scale-[1.03] hover:shadow-xl transition">
+          <div className="border border-white/10 p-6 rounded-xl bg-white/5 backdrop-blur hover:scale-105 hover:border-white/30 transition-all duration-300 shadow-xl">
 
             <h3 className="text-xl font-semibold mb-3">
               ProductLens
@@ -119,7 +127,7 @@ export default function Home() {
             </p>
 
             <a
-              href="https://github.com/anil-ceylan"
+              href="https://github.com"
               target="_blank"
               className="text-blue-400 hover:text-blue-300"
             >
@@ -130,7 +138,7 @@ export default function Home() {
 
 
 
-          <div className="border border-white/10 p-6 rounded-xl hover:border-white/30 hover:scale-[1.03] hover:shadow-xl transition">
+          <div className="border border-white/10 p-6 rounded-xl bg-white/5 backdrop-blur hover:scale-105 hover:border-white/30 transition-all duration-300 shadow-xl">
 
             <h3 className="text-xl font-semibold mb-3">
               Market Radar
@@ -141,7 +149,7 @@ export default function Home() {
             </p>
 
             <a
-              href="https://github.com/anil-ceylan"
+              href="https://github.com"
               target="_blank"
               className="text-blue-400 hover:text-blue-300"
             >
@@ -158,10 +166,7 @@ export default function Home() {
 
       {/* TECH STACK */}
 
-      <section
-        id="tech"
-        className="text-center py-20 border-t border-white/10"
-      >
+      <section id="tech" className="text-center py-20 border-t border-white/10">
 
         <h2 className="text-3xl font-semibold mb-10">
           Tech Stack
@@ -180,7 +185,7 @@ export default function Home() {
 
             <span
               key={tech}
-              className="px-4 py-2 border border-white/20 rounded-lg text-gray-300"
+              className="px-4 py-2 border border-white/20 rounded-lg text-gray-300 backdrop-blur bg-white/5"
             >
               {tech}
             </span>
@@ -195,10 +200,7 @@ export default function Home() {
 
       {/* ABOUT */}
 
-      <section
-        id="about"
-        className="text-center max-w-2xl mx-auto py-24 px-6"
-      >
+      <section id="about" className="text-center max-w-2xl mx-auto py-24 px-6">
 
         <h2 className="text-3xl font-semibold mb-6">
           About
@@ -227,8 +229,8 @@ export default function Home() {
         </p>
 
         <a
-          href="mailto:muhammetanilceylann@gmail.com?subject=Portfolio Contact&body=Hi Anil, I saw your portfolio and wanted to connect."
-          className="px-6 py-3 border border-white/20 rounded-lg hover:bg-white hover:text-black transition shadow-lg hover:shadow-white/20"
+          href="mailto:muhammetanilceylann@gmail.com?subject=Portfolio%20Contact&body=Hi%20Anil%2C%20I%20saw%20your%20portfolio%20and%20wanted%20to%20connect."
+          className="px-6 py-3 rounded-xl bg-white/10 backdrop-blur border border-white/20 hover:bg-white hover:text-black transition-all duration-300 shadow-xl"
         >
           Email Me
         </a>
