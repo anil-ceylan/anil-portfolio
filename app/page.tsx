@@ -1,10 +1,10 @@
 export default function Home() {
   return (
-    <main className="bg-black text-white min-h-screen">
+    <main className="bg-black text-white min-h-screen font-sans">
 
       {/* NAVBAR */}
 
-      <nav className="fixed w-full top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur">
+      <nav className="fixed w-full top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur">
         <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
 
           <h1 className="font-semibold text-lg">
@@ -36,7 +36,7 @@ export default function Home() {
 
       <section className="h-screen flex flex-col justify-center items-center text-center px-6">
 
-        <h1 className="text-6xl font-bold tracking-tight mb-4 bg-gradient-to-r from-white to-gray-400 text-transparent bg-clip-text">
+        <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-white to-gray-400 text-transparent bg-clip-text">
           Muhammet Anıl Ceylan
         </h1>
 
@@ -44,8 +44,9 @@ export default function Home() {
           AI Product Builder • Data-Driven Strategy • MIS Student
         </p>
 
-        <p className="text-gray-500 max-w-xl mb-8">
-          Building AI tools that transform data and user feedback into actionable product insights.
+        <p className="text-gray-500 max-w-xl mb-10">
+          Building AI tools that transform data and user feedback into
+          actionable product insights.
         </p>
 
 
@@ -78,18 +79,16 @@ export default function Home() {
 
       <section id="projects" className="max-w-6xl mx-auto px-6 py-24">
 
-        <h2 className="text-3xl font-semibold text-center mb-12">
+        <h2 className="text-3xl font-semibold text-center mb-16">
           Projects
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8">
 
 
-          {/* PROJECT 1 */}
+          <div className="border border-white/10 p-6 rounded-xl hover:border-white/30 hover:scale-[1.03] hover:shadow-xl transition">
 
-          <div className="border border-white/10 p-6 rounded-xl hover:border-white/30 hover:scale-[1.03] hover:shadow-xl transition duration-300">
-
-            <h3 className="text-xl font-semibold mb-2">
+            <h3 className="text-xl font-semibold mb-3">
               HireFit
             </h3>
 
@@ -109,11 +108,9 @@ export default function Home() {
 
 
 
-          {/* PROJECT 2 */}
+          <div className="border border-white/10 p-6 rounded-xl hover:border-white/30 hover:scale-[1.03] hover:shadow-xl transition">
 
-          <div className="border border-white/10 p-6 rounded-xl hover:border-white/30 hover:scale-[1.03] hover:shadow-xl transition duration-300">
-
-            <h3 className="text-xl font-semibold mb-2">
+            <h3 className="text-xl font-semibold mb-3">
               ProductLens
             </h3>
 
@@ -133,11 +130,9 @@ export default function Home() {
 
 
 
-          {/* PROJECT 3 */}
+          <div className="border border-white/10 p-6 rounded-xl hover:border-white/30 hover:scale-[1.03] hover:shadow-xl transition">
 
-          <div className="border border-white/10 p-6 rounded-xl hover:border-white/30 hover:scale-[1.03] hover:shadow-xl transition duration-300">
-
-            <h3 className="text-xl font-semibold mb-2">
+            <h3 className="text-xl font-semibold mb-3">
               Market Radar
             </h3>
 
@@ -163,12 +158,14 @@ export default function Home() {
 
       {/* TECH STACK */}
 
-      <section id="tech" className="text-center py-20 border-t border-white/10">
+      <section
+        id="tech"
+        className="text-center py-20 border-t border-white/10"
+      >
 
         <h2 className="text-3xl font-semibold mb-10">
           Tech Stack
         </h2>
-
 
         <div className="flex flex-wrap justify-center gap-4">
 
@@ -198,7 +195,10 @@ export default function Home() {
 
       {/* ABOUT */}
 
-      <section id="about" className="text-center max-w-2xl mx-auto py-24 px-6">
+      <section
+        id="about"
+        className="text-center max-w-2xl mx-auto py-24 px-6"
+      >
 
         <h2 className="text-3xl font-semibold mb-6">
           About
@@ -226,7 +226,6 @@ export default function Home() {
           Feel free to reach out for collaborations or opportunities.
         </p>
 
-
         <a
           href="mailto:youremail@gmail.com"
           className="px-6 py-3 border border-white/20 rounded-lg hover:bg-white hover:text-black transition shadow-lg"
@@ -241,11 +240,8 @@ export default function Home() {
       {/* FOOTER */}
 
       <footer className="text-center text-gray-500 text-sm pb-8">
-
         © 2026 Muhammet Anıl Ceylan • Built with Next.js
-
       </footer>
-
 
     </main>
   );
