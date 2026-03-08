@@ -61,7 +61,7 @@ export default function Home() {
         <div className="flex gap-4">
 
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/muhammetanilceylan/"
             target="_blank"
             className="px-6 py-3 rounded-xl bg-white/10 backdrop-blur border border-white/20 hover:bg-white hover:text-black transition-all duration-300 shadow-xl"
           >
@@ -70,7 +70,7 @@ export default function Home() {
 
 
           <a
-            href="https://github.com"
+            href="https://github.com/anil-ceylan"
             target="_blank"
             className="px-6 py-3 rounded-xl bg-white/10 backdrop-blur border border-white/20 hover:bg-white hover:text-black transition-all duration-300 shadow-xl"
           >
@@ -241,9 +241,29 @@ export default function Home() {
 
       {/* FOOTER */}
 
-      <footer className="text-center text-gray-500 text-sm pb-8">
-        © 2026 Muhammet Anıl Ceylan • Built with Next.js
-      </footer>
+      <footer className="text-center text-gray-400 text-sm pb-8">
+
+  <div className="flex justify-center gap-6 mb-3">
+
+    <a className="hover:text-white transition" href="https://linkedin.com/in/muhammetanilceylan" target="_blank">
+      LinkedIn
+    </a>
+
+    <a className="hover:text-white transition" href="https://github.com/anil-ceylan" target="_blank">
+      GitHub
+    </a>
+
+    <a className="hover:text-white transition" href="mailto:muhammetanilceylann@gmail.com">
+      Email
+    </a>
+
+  </div>
+
+  <p>
+    © 2026 Muhammet Anıl Ceylan • Built with Next.js
+  </p>
+
+</footer>
 
     </main>
   );
