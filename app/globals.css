@@ -31,3 +31,19 @@ body {
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
 }
+/* Mouse spotlight effect */
+
+.spotlight {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    600px circle at var(--x) var(--y),
+    rgba(99, 102, 241, 0.15),
+    transparent 40%
+  );
+  z-index: 1;
+  
+}html {
+  scroll-behavior: smooth;
+}
